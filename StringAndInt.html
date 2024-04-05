@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRING AND INT</title>
+</head>
+<body>
+
+
+    <p id="add"></p>
+
+    <button type="submit" onclick="AddValues()">SHOW ADD RESULT</button>
+
+    <p id="divide"></p>
+    <button type="submit" onclick="Division()">SHOW DIVIDE RESULT</button>
+
+    
+    <script>
+
+     let firstValue = 40;
+     let secondValue = 30;
+
+     var data = 11;
+
+
+     console.log(data.toString());
+
+     function AddValues()
+     {
+        let result =  firstValue + secondValue;
+        document.getElementById("add").innerHTML = result;
+     }
+
+     function Division()
+     {
+        let result =  firstValue * secondValue;
+        document.getElementById("divide").innerHTML = result;
+     }
+
+         let text = "Manoj";
+         let textLength = text.toUpperCase();
+
+    </script>
+
+</body>
+</html>
