@@ -1,0 +1,24 @@
+DAY : 7-8
+
+Web Development : Browser | Protocol | HTTPS | OSI | HTML |CSS |
+
+Javascript -
+
+what is browser?
+what is Javascript?
+how javascript works ? 
+what is Javascript Engine?
+
+Practice - 
+                    javascript practice
+                    Variables : let | const |var
+Use of variables and manipulation of variables.
+
+DataType - Type of data type. 
+use every data type seperatley.
+
+Operators - basic operators.
+
+Function practice - Syntax | printing JS elements with HTML elements.
+
+
