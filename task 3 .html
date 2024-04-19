@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TASK 3 </title>
+</head>
+<body>
+
+
+    <script>
+        // Event  : Binding JS components in Html Elements
+
+        function myfun()
+        {
+            var a=parseInt(document.getElementById('number').value);
+            var b=parseInt(document.getElementById('numbers').value);
+            document.getElementById('result').innerHTML=a+b;
+        }
+    </script>
+
+
+
+1st number :
+<input type="number" value="" id="number"><br><br>
+2nd number  :
+<input type="number" value="" id="numbers"><br><br>
+<input type="button" value="plus" onclick=" return myfun() ">   
+
+
+<br>
+<br>
+The result is  : <br>
+<br>
+<span id="result"></span>
+
+
+ 
+</body>
+</html>
