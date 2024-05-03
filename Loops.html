@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loops JS</title>
+    <title>Document</title>
 </head>
 <body>
     <script>
-        //Conditions : Control Statement, which consitions that our program excuted with our conditions.
-        //Array : Single variable, stores multiple values.
-        //For :  This is part of control statement in javascript : The for loop defines how our program which number of times.
+        let sum = 0
+let n = prompt("Enter the value of n")
+n = Number.parseInt(n)
+for (let i = 0; i < n; i++) {
+  sum += (i + 1)
+  // console.log((i+1), "+")
+}
 
-//kwyword : (variable declration : Conditions :  increment : ) || Print and call
-  for (let i = 1; i <= 10; i++) {
-    console.log((2 * i));
+console.log("Sum of first " + n + " natural numbers is " + sum)
+// console.log(i)
 
+
+//for(dec; con : inc;)
+
+
+
+
+let obj = {
+  harry: 90,
+  shubh: 45,
+  shivika: 56,
+  ritika: 57,
+  shiv: 23
+}
+
+// For in loop
+for (let a in obj) {
+  console.log("Marks of " + a + " are " + obj[a])
+}
+
+// For of loop
+for (let b of "Harry") {
+  console.log(b)
 }
 
 
