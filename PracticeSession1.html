@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+   
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div id="home" class="page">
+                <h2>Home</h2>
+                <p>Welcome to the home page!</p>
+            </div>
+            <div id="about" class="page" style="display: none;">
+                <h2>About</h2>
+                <p>Learn more about us on this page.</p>
+            </div>
+            <div id="contact" class="page" style="display: none;">
+                <h2>Contact</h2>
+                <p>Get in touch with us!</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 1em;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+  </style>
+
+
+<script>
+    function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => {
+        if (page.id === pageId) {
+            page.style.display = 'block';
+        } else {
+            page.style.display = 'none';
+        }
+    });
+}
+
+
+//Function Definition
+//Selecting All Pages
+//Loop Through Each Page
+//Conditional Display Logic
+
+
+// The function showPage(pageId) is designed to display one specific page section and hide all others.
+// It first selects all elements with the class page.
+// It then iterates over each of these elements.
+// For each element, it checks if the element's ID matches the provided pageId.
+// If it matches, the element is displayed by setting its display style to 'block'.
+// If it does not match, the element is hidden by setting its display style to 'none'.
+
+</script>
+</body>
+</html>
